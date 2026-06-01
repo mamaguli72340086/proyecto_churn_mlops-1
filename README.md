@@ -1,3 +1,6 @@
+# objetivo del Modulo
+-Diseñar e implementar un flujo básico de ML-Ops para la puesta en producción de modelos de Machine Learning, integrando prácticas de gestión del ciclo de vida, reproducibilidad, control de versiones, automatización, construcción de APIs, contenedorización, pruebas funcionales, monitoreo y documentación técnica, con el propósito de asegurar que los modelos puedan operar de forma confiable, trazable, escalable y mantenible en entornos productivos o preproductivos.
+
 # Proyecto Churn MLOps
 
 Este proyecto corresponde a una práctica inicial del módulo de MLOps.
@@ -55,3 +58,32 @@ El flujo básico será:
 ## Control de versiones
 
 Este proyecto utiliza Git para registrar cambios y GitHub para respaldar el repositorio en la nube.
+
+## Autores
+
+- marlenemarthagutierrezlimachi@gmail.com 
+- https://github.com/mamaguli72340086/
+
+## 🏗️ Arquitectura
+
+![Arquitectura MLOps](https://via.placeholder.com/800x400?text=Diagrama+MLOps)
+
+1. **DVC** – versionado de datasets y pipelines de datos.
+2. **MLflow** – registro de parámetros, métricas y modelos.
+3. **GitHub Actions** – CI/CD: test, lint, y despliegue condicional.
+4. **FastAPI + Docker** – servidor de inferencia.
+5. **Evidently** – monitoreo de calidad de datos y drift.
+
+## Requisitos
+
+- Python 3.10
+- Docker (opcional)
+- DVC (>2.0)
+- MLflow (>1.30)
+- Cuenta en GitHub (con Actions habilitadas)
+
+## Instalacion
+
+git clone https://github.com/mamaguli72340086/proyecto_churn_mlops-1
+cd churn_mlops
+make setup  # o manual: python -m venv .venv; source .venv/bin/activate; pip install -r requirements.txt
