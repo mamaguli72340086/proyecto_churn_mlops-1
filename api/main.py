@@ -33,7 +33,9 @@ def cargar_modelo():
 @app.get("/")
 def inicio():
     return {
-        "mensaje": "API de predicción de churn activa"
+        "mensaje": "Servicio ML-Ops activo",
+        "estado": "ok",
+        "autor": "Marlene Martha Gutierrez Limachi"
     }
 
 @app.get("/health")
@@ -65,3 +67,6 @@ def predict(cliente: Cliente):
         "churn_predicho": prediccion,
         "probabilidad_churn": probabilidad
     }
+
+
+
